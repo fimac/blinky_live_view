@@ -1,0 +1,19 @@
+<section class="phx-hero">
+  <h1>Blinky</h1>
+</section>
+
+<section class="row">
+  <div class="column">
+    <h1>On Duration</h1>
+      <p> Current on duration =</p>
+        <button id="on-increase">+</button>
+        <button id="on-decrease">-</button>
+  </div>
+
+  <div class="column">
+    <h1>Off Duration</h1>
+      <p> Current on duration =</p>
+        <button id="off-increase">+</button>
+        <button id="off-decrease">-</button>
+  </div>
+</section>

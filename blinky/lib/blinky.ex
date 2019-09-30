@@ -7,8 +7,8 @@ defmodule Blinky do
   """
 
   # Durations are in milliseconds
-  @on_duration 200
-  @off_duration 200
+  @on_duration 8000
+  @off_duration 400
 
   alias Nerves.Leds
   require Logger
@@ -28,7 +28,7 @@ defmodule Blinky do
 
   # given an led key, turn it on for @on_duration then back off
   defp blink(led_key) do
-    # Logger.debug "blinking led #{inspect led_key}"
+    Logger.debug("blinking led #{inspect(led_key)}")
     Leds.set([{led_key, true}])
     :timer.sleep(@on_duration)
     Leds.set([{led_key, false}])
