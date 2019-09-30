@@ -48,6 +48,7 @@ defmodule Firmware.MixProject do
       # Dependencies for all targets except :host
       {:nerves_runtime, "~> 0.6", targets: @all_targets},
       {:nerves_init_gadget, "~> 0.4", targets: @all_targets},
+      {:nerves_leds, "~> 0.8", targets: @all_targets},
 
       # Dependencies for specific targets
       {:nerves_system_rpi, "~> 1.8", runtime: false, targets: :rpi},
@@ -57,7 +58,7 @@ defmodule Firmware.MixProject do
       {:nerves_system_rpi3a, "~> 1.8", runtime: false, targets: :rpi3a},
       {:nerves_system_rpi4, "~> 1.8", runtime: false, targets: :rpi4},
       {:nerves_system_bbb, "~> 2.3", runtime: false, targets: :bbb},
-      {:nerves_system_x86_64, "~> 1.8", runtime: false, targets: :x86_64},
+      {:nerves_system_x86_64, "~> 1.8", runtime: false, targets: :x86_64}
     ]
   end
 
